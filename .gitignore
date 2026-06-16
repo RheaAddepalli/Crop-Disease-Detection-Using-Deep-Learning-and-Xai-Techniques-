@@ -1,0 +1,42 @@
+# Virtual environment
+venv_crop/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+
+# Trained models (large files)
+src/models/*.keras
+src/models/*.h5
+src/models/crop_disease_resnet50_model/
+
+# Datasets (large files — share separately)
+datasets/train_dataset/
+datasets/test_dataset/
+datasets/predict_dataset/
+datasets/
+
+# Temp uploads from Flask
+src/backend/temp/*
+!src/backend/temp/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+src/finetune_model.py
